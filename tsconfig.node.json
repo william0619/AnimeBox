@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "Node",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "baseUrl": ".",
+    "paths": {
+      "@": ["./src/*"],
+      "@main/*": ["./src/main/*"],
+      "@common/*": ["./src/common/*"]
+    }
+  },
+  //  "files": ["src/main/**/*"],
+  "include": ["src/main/**/*", "config/**/*", "scripts/**/*", "src/common/**/*"],
+  "exclude": ["node_modules/**", "builder", "dist", "src/renderer/**/*"]
+}
