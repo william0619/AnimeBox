@@ -4,21 +4,14 @@
  **/
 import { useEventListener, useMount } from 'ahooks'
 import { ClientUtils } from '@renderer/utils/client.utils.ts'
-// electron 专用
+
 export const useClientInit = () => {
   const ele = ClientUtils.instance()
 
   useMount(async () => {
     if (ele) {
       const winName = await ele.ipcRenderer.invoke('getWinName')
-      console.log('winName', winName)
       ClientUtils.setWinName(winName)
-      // setTimeout(() => {
-      //   ele.ipcRenderer.on('setWinName', (name) => {
-      //     console.log('shezhi mingz ', name)
-      //     ClientUtils.setWinName(name)
-      //   })
-      // }, 5000)
     }
   })
 
@@ -32,7 +25,7 @@ export const useClientInit = () => {
         // 检查点击的元素是否为 <a> 标签
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        if (target?.tagName === 'A') {
+        if (target && target?.tagName === 'A') {
           // 阻止默认的打开行为
           event.preventDefault()
 

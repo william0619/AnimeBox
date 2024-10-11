@@ -19,7 +19,7 @@ i18n
   // 配置参数的文档: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'zh',
     interpolation: {
       escapeValue: false
     }
@@ -33,4 +33,4 @@ i18n
 //   return dayjs(value).format('YYYY-MM-DD')
 // })
 
-export default i18n
+export const i18next = i18n
