@@ -22,7 +22,7 @@ function WinBarSide() {
         electron?.ipcRenderer.send('changeMaximize', { winName: ClientUtils.getWinName() })
       }}
     >
-      <div hidden={isWin} className={'flex justify-end'}>
+      <div hidden={!isWin} className={'flex justify-end'}>
         <OperateBtnBar />
       </div>
     </div>

@@ -46,7 +46,7 @@ async function main() {
     myEmitter.emit('package')
   })
 
-  spawn('cross-env', ['ELE_START=true', 'vite', 'build', '--config', rendererPath], {
+  spawn('cross-env', ['vite', 'build', '--config', rendererPath], {
     shell: true,
     stdio: 'inherit'
   })
