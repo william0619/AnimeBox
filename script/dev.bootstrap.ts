@@ -35,7 +35,7 @@ const createProcessWatch = (path: string, entry: string, cb: () => void) => {
 
 async function main() {
   const configPath = path.join(process.cwd(), './config')
-  const buildScript = path.join(configPath, './viteBuild.main.ts')
+  const buildScript = path.join(configPath, './vite-build.main.ts')
 
   const rendererPath = path.join(configPath, './vite.config.renderer.ts')
 
