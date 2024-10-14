@@ -5,7 +5,7 @@
 
 import { createPortal } from 'react-dom'
 import { ClientUtils } from '@renderer/utils/client.utils.ts'
-import { OperateBtnBar } from '@renderer/components/WinBar/widget/OperateBtnBar.tsx'
+import { OperateBtnBar } from '@renderer/components/WinBar/widget/operate-btn-bar.tsx'
 
 function WinBarSide() {
   const electron = ClientUtils.instance()

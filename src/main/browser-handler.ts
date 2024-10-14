@@ -3,7 +3,7 @@ import { UtilMain } from './utils/util.main'
 import path from 'node:path'
 import { winName } from './const'
 import log from 'electron-log'
-import { ipcMainHandler } from './ipc/ipcMainHandler'
+import { ipcMainHandler } from './ipc/ipc-main-handler.ts'
 import { UtilCommon } from './utils/util.common'
 
 type ICreateBrowser = {

@@ -1,7 +1,7 @@
 // import '@renderer/lib/i18next.ts'
 import './globals.css'
 import { WinBar } from '@renderer/components/WinBar'
-import { useClientInit } from '@renderer/hooks/useClientInit.ts'
+import { useClientInit } from '@renderer/hooks/use-client-init.ts'
 import { ErrorBoundary } from 'react-error-boundary'
 import { RouterProvider } from 'react-router'
 import { router } from '@renderer/app/router/routes.tsx'

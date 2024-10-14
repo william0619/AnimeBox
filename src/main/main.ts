@@ -7,7 +7,7 @@ import { release, platform } from 'os'
 import { winName } from './const'
 import log from 'electron-log'
 import { DB } from './db'
-import { browserHandler } from './browserHandler'
+import { browserHandler } from './browser-handler.ts'
 
 const isMac = platform() === 'darwin'
 

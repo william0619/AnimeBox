@@ -2,7 +2,7 @@
  author: william   email:362661044@qq.com
  create_at:2023/9/5 4:44 PM
  **/
-import { ipcMainHandler } from './ipcMainHandler'
+import { ipcMainHandler } from './ipc-main-handler.ts'
 import { shell } from 'electron'
 import { UtilMain } from '../utils/util.main'
 

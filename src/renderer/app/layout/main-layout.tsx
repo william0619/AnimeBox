@@ -2,9 +2,9 @@
  author: william   email:362661044@qq.com
  create_at: 2024/10/11
  **/
-import { Nav } from '@renderer/app/layout/Nav.tsx'
-import { Logo } from '@renderer/app/layout/Logo.tsx'
-import { KeepAlive } from '@renderer/app/layout/KeepAlive.tsx'
+import { Nav } from '@renderer/app/layout/nav.tsx'
+import { Logo } from '@renderer/app/layout/logo.tsx'
+import { KeepAlive } from '@renderer/app/layout/keep-alive.tsx'
 
 function MainLayout() {
   return (

@@ -3,7 +3,7 @@
  create_at: 2024/10/11
  **/
 import { createHashRouter } from 'react-router-dom'
-import MainLayout from '@renderer/app/layout/MainLayout.tsx'
+import MainLayout from '@renderer/app/layout/main-layout.tsx'
 import CollectedPage from '@renderer/app/module/Collected'
 import { RouteObject } from 'react-router/dist/lib/context'
 import { Binoculars, Download, SquareLibrary } from 'lucide-react'

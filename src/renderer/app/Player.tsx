@@ -4,7 +4,7 @@
  **/
 import { WinBar } from '@renderer/components/WinBar'
 import { ErrorBoundary } from 'react-error-boundary'
-import { useClientInit } from '@renderer/hooks/useClientInit.ts'
+import { useClientInit } from '@renderer/hooks/use-client-init.ts'
 
 function Player() {
   useClientInit()

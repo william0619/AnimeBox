@@ -34,7 +34,7 @@ export const Nav = () => {
         const active = isActivity(item.path || '')
         return (
           <Button
-            className={cn('gap-2 text-sm justify-start text-neutral-500 hover:bg-neutral-50', {
+            className={cn('gap-2 text-sm justify-start text-neutral-500', {
               'text-accent-foreground': active,
               'bg-accent': active
             })}
