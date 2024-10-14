@@ -1,8 +1,8 @@
 import { BrowserWindow, ipcMain } from 'electron'
 import { IpcMainEvent } from 'electron'
-import { IToMainEvents, IToRendererEvents } from '../types/ipcEvent'
-import { IToMainInvoke } from '../types/ipcInvoke'
-import { IToRendererInvoke } from '../types/ipcEvent'
+import { IToMainEvents, IToRendererEvents } from '../types/ipc-event'
+import { IToMainInvoke } from '../types/ipc-invoke'
+import { IToRendererInvoke } from '../types/ipc-event'
 
 type ISend<K extends keyof IToRendererEvents> = {
   win: BrowserWindow
@@ -62,9 +62,7 @@ class IpcMainHandler {
 
   handle<K extends keyof IToMainInvoke>(
     channel: K,
-    func: (
-      args: IToMainInvoke[K]['args']
-    ) => IToMainInvoke[K]['return'] | Promise<IToMainInvoke[K]['return']>
+    func: (args: IToMainInvoke[K]['args']) => IToMainInvoke[K]['return'] | Promise<IToMainInvoke[K]['return']>
   ) {
     ipcMain.handle(channel, async (_, args) => {
       return func(args)
@@ -73,9 +71,7 @@ class IpcMainHandler {
 
   handleOnce<K extends keyof IToMainInvoke>(
     channel: K,
-    func: (
-      args: IToMainInvoke[K]['args']
-    ) => IToMainInvoke[K]['return'] | Promise<IToMainInvoke[K]['return']>
+    func: (args: IToMainInvoke[K]['args']) => IToMainInvoke[K]['return'] | Promise<IToMainInvoke[K]['return']>
   ) {
     ipcMain.handleOnce(channel, (_, args) => {
       return func(args)

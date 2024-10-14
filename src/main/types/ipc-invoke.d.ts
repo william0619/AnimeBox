@@ -1,5 +1,5 @@
 // ipcRenderer.invoke 与 ipcMain.handle
-import { IEventStation } from './ipcEventStation'
+// import { IEventStation } from './ipc-event-station'
 
 type IStructure<ARGS, RETURN> = {
   args: ARGS

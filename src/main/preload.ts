@@ -1,7 +1,7 @@
 import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
-import { IToMainEvents, IToRendererEvents } from './types/ipcEvent'
-import { IToMainInvoke } from './types/ipcInvoke'
-import { IToRendererInvoke } from './types/ipcEvent'
+import { IToMainEvents, IToRendererEvents } from './types/ipc-event'
+import { IToMainInvoke } from './types/ipc-invoke'
+import { IToRendererInvoke } from './types/ipc-event'
 
 const ipcRendererBase = {
   // 发消息给 main

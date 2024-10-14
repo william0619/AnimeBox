@@ -8,7 +8,7 @@ import MaxIcon from '../icons/max.svg?react'
 import MinIcon from '../icons/min.svg?react'
 import MinimizeIcon from '../icons/minimize.svg?react'
 import ShutDownIcon from '../icons/shutdown.svg?react'
-import { WinBarBtn } from '@renderer/components/WinBar/widget/win-bar-btn.tsx'
+import { WinBarBtn } from '@renderer/components/win-bar/widget/win-bar-btn.tsx'
 import { ClientUtils } from '@renderer/utils/client.utils.ts'
 
 export function OperateBtnBar() {

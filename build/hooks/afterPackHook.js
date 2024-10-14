@@ -8,5 +8,4 @@ async function AfterPackHook(context) {
   // console.log('AfterPackHook', context)
 }
 
-// eslint-disable-next-line no-undef
 module.exports = AfterPackHook

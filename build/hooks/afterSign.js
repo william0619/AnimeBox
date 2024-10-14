@@ -38,5 +38,4 @@ async function AfterSign(context) {
   }
 }
 
-// eslint-disable-next-line no-undef
 module.exports = AfterSign
