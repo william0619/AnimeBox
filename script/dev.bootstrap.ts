@@ -16,7 +16,7 @@ class MyEmitter extends EventEmitter {
 
 const createProcessWatch = (path: string, entry: string, cb: () => void) => {
   const _process = spawn('tsx', [path, `--entry=${entry}`, '--watch'], {
-    // shell: true
+    shell: true
     // stdio: 'inherit'
   })
     .on('close', (code) => process.exit(code))
