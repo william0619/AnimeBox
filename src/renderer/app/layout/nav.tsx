@@ -28,7 +28,7 @@ export const Nav = () => {
   }
 
   return (
-    <div className={'flex flex-col gap-2 px-3'}>
+    <div className={'flex flex-col gap-2 px-3 select-none'}>
       {navList.map((item) => {
         const Icon = item.icon
         const active = isActivity(item.path || '')
@@ -36,7 +36,8 @@ export const Nav = () => {
           <Button
             className={cn('gap-2 text-sm justify-start text-neutral-500', {
               'text-accent-foreground': active,
-              'bg-accent': active
+              'bg-primary/70 hover:bg-primary/70': active
+              // 'text-primary': active
             })}
             key={item.path}
             size={'mini'}

@@ -95,7 +95,9 @@ class BrowserHandler {
 
     // 默认打开控制台
     if (!this.isProductPackage) {
-      win.webContents.openDevTools()
+      setTimeout(() => {
+        win.webContents.openDevTools({ mode: 'detach', activate: true })
+      }, 1000)
     }
 
     win.once('ready-to-show', () => {

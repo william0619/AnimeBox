@@ -5,7 +5,7 @@
 
 export const Logo = () => {
   return (
-    <div className={'flex gap-2 py-4 px-4 mt-1'}>
+    <div className={'flex gap-2 py-4 px-4 app-drag select-none'}>
       <div>logo</div>
       <h1>Anime Box</h1>
     </div>

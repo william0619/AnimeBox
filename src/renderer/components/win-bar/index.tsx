@@ -15,8 +15,8 @@ function WinBarSide() {
   return (
     <div
       id={'winBar'}
-      className={'absolute w-screen px-1.5 h-8 flex justify-end items-center'}
-      style={{ zIndex: 99999 }}
+      className={'fixed w-screen px-2 flex justify-end items-center app-drag'}
+      style={{ zIndex: 99999, height: 'var(--win-bar-height)' }}
       onDoubleClick={(e) => {
         e.preventDefault()
         electron?.ipcRenderer.send('changeMaximize', { winName: ClientUtils.getWinName() })
