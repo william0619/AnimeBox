@@ -21,7 +21,7 @@ export function KeepAlive() {
   }, [pathname])
 
   return (
-    <div>
+    <div data-com={'keep-alive'}>
       {Array.from(componentList.current).map(([key, component]) => (
         <div key={key} hidden={pathname !== key}>
           {component}

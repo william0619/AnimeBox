@@ -15,7 +15,7 @@ function MainLayout() {
 
   return (
     <div id={'main-layout'} className={'grid grid-cols-[12rem_1fr] w-screen h-screen'}>
-      <div className={cn('bg-neutral-50 space-y-2')} style={{ paddingTop: isWin ? 0 : 'var(--win-bar-height)' }}>
+      <div className={cn('bg-neutral-50 space-y-2')} style={{ paddingTop: isWin ? 0 : '1.5rem' }}>
         <Logo />
         <Nav />
       </div>
