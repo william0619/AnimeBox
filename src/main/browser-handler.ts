@@ -68,8 +68,8 @@ class BrowserHandler {
       // transparent: true,
       titleBarStyle: 'hidden',
       // titleBarOverlay: true,
-      // titleBarStyle: isMac ? 'hiddenInset' : 'hidden',
-      // trafficLightPosition: { x: 16, y: 6 },
+      // titleBarStyle: true ? 'hiddenInset' : 'hidden',
+      trafficLightPosition: { x: 10, y: 8 },
       frame: false,
       disableAutoHideCursor: false,
       webPreferences: {
@@ -141,13 +141,13 @@ class BrowserHandler {
     })
 
     // 刷新后逻辑，防止渲染线程 winName 丢失
-    win.webContents.on('did-finish-load', () => {
-      console.log('did-finish-load')
-      // log.info('did-finish-load')
-      // setTimeout(() => {
-      //   ipcMainHandler.sendToBrowser({ win, channel: 'setWinName', data: name })
-      // }, 1000)
-    })
+    // win.webContents.on('did-finish-load', () => {
+    //   console.log('did-finish-load')
+    //   // log.info('did-finish-load')
+    //   // setTimeout(() => {
+    //   //   ipcMainHandler.sendToBrowser({ win, channel: 'setWinName', data: name })
+    //   // }, 1000)
+    // })
 
     if (name === winName.main) {
       win.webContents.once('did-finish-load', () => {

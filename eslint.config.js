@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import checkFile from 'eslint-plugin-check-file'
+import tailwindcss from 'eslint-plugin-tailwindcss'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -15,6 +16,7 @@ export default tseslint.config(
       globals: globals.browser
     },
     plugins: {
+      tailwindcss: tailwindcss,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       'check-file': checkFile
