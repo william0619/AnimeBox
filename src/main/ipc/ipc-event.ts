@@ -13,9 +13,9 @@ export function ipcEventsAddWatch() {
   })
 
   // 获取开机自启动状态
-  ipcMainHandler.handle('getAutoStart', (_) => {
-    return UtilMain.getAutoStart()
-  })
+  // ipcMainHandler.handle('getAutoStart', (_) => {
+  //   return UtilMain.getAutoStart()
+  // })
 
   // 打开 外部链接
   ipcMainHandler.on('openExternal', ({ url }) => {
