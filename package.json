@@ -66,6 +66,7 @@
     "nanoid": "^5.0.9",
     "node-abi": "^3.73.0",
     "winston": "^3.17.0",
+    "ws": "^8.18.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
@@ -105,6 +106,7 @@
     "@types/node-abi": "^3.0.3",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
+    "@types/ws": "^8.5.13",
     "@vitejs/plugin-react-swc": "^3.7.2",
     "ahooks": "^3.8.4",
     "autoprefixer": "^10.4.20",
